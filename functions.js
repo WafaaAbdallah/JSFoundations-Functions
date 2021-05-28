@@ -7,9 +7,16 @@
  * greet("Hamza") logs "Hello Hamza"
  */
  function greet(name) {
+console.log ("Hello " + name);
+  // console.log(`Hello  ${name}`);
+
+ }
+ 
+ greet( "Amal");
+
   // Your code here
-  return(`Hello ${name}`);
-}
+ // return(`Hello ${name}`);
+//}
 
 /**
  * isOdd(n):
@@ -21,13 +28,32 @@
  * isOdd(10) -> false
  */
 function isOdd(n) {
-  if  (n%2 === 0)
-  return false;
-  else
-  return true;
-  // Your code here
+
+  if(n%2 !== 0){
+    return true
+  }
+  else {
+    return false;
+  }
 }
+ let res = (m)=>{
+m%2 !==0;
+return true;
+ }
+
+ console.log (res(3));
+
+
+
+
+  //if  (n%2 === 0)
+  //return false;
+  //else
+  //return true;
+  // Your code here
+
 console.log(isOdd(7));
+
 /**
  * oddsSmallerThan(n):
  * - receives a number n
@@ -38,15 +64,25 @@ console.log(isOdd(7));
  * oddsSmallerThan(15) -> 7
  */
  function oddsSmallerThan(n) {
-  var allOddNumbers=0;
-  for (let i = n-1; i >0; i--) {
-    if(i%2 !== 0){
-     allOddNumbers++
-    }
-  }  
-  return allOddNumbers;  
-}
+   if (n%2 === 0){
+     return (n/2);}
+
+     else { return ((n-1)/2);
+
+     }
+   }
+//   var allOddNumbers=0;
+//   for (let i = n-1; i >0; i--) {
+//     if(i%2 !== 0){
+//      allOddNumbers++
+//     }
+//   }  
+//   return allOddNumbers;  
+// }
 console.log (oddsSmallerThan(9));
+console.log (oddsSmallerThan(10));
+
+
 /**
  * squareOrDouble(n):
  * - receives a number n
@@ -58,10 +94,18 @@ console.log (oddsSmallerThan(9));
  * squareOrDouble(9) -> 81
  */
 function squareOrDouble(n) {
-  if(n%2 === 1)
-  return n*n;
-  else
+if(n%2 ===0){
   return n*2;
+}
+else{
+  return n*n;
+}
+
+
+  // if(n%2 === 1)
+  // return n*n;
+  // else
+  // return n*2;
 
   // Your code here
 }
